@@ -1,0 +1,75 @@
+<app-header></app-header>
+
+<div class="container_home">
+    <h1 class="heading_top">Health Management System</h1>
+    <p class="heading_top_p">Welcom to Health Management System. A health Management system is the way in which you can
+        find good food diet and exercise for you. A strong health system will ensure that everyone is able to access
+        high-quality healthcare without any difficulty. Everyone has the right to access healthcare.</p>
+
+
+    <div class="row">
+        <div class="col-md-6 home_page1 ">
+            <div>
+                <h5 class="heading_cal">BMI Calculator</h5>
+            </div>
+            <form>
+                <div>
+                    Age: &nbsp; &nbsp; &nbsp; <input type="text" class="home_form" [formControl]="age"> ages: 15-80
+                </div>
+                <div>
+                    Gender: <input type="radio" value="male" class="home_form" [formControl]="male"> Male
+                    <input type="radio" value="female" class="home_form" [formControl]="female"> Female
+                </div>
+                <div>
+                    Height: <input type="number" class="home_form" [formControl]="height">
+                </div>
+                <div>
+                    Wieght: <input type="number" class="home_form" [formControl]="weight">
+                </div>
+                <div>
+                    <button class="cal_submit" type="button" (click)="cal_submit()" id="reg_btn">Calculate</button>
+                </div>
+            </form>
+            <div>
+                <h5 class="BMI_result"> BMI Result = {{bmi}} kg/m<sup>2</sup></h5>
+                <ul>
+                    <li>Healthy BMI range: 18.5 kg/m<sup>2</sup> - 25 kg/m<sup>2</sup></li>
+                    <li>Healthy weight for the height: 43.3 kgs - 58.5 kgs</li>
+                    <li>Ponderal Index: 15.4 kg/m<sup>3</sup></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 home_page2">
+            <img class="food_img" src="/assets/fruits_img.png" alt=""><br>
+            <!-- <img class="food_img" src="/assets/veg_img.png" alt=""> -->
+        </div>
+    </div>
+    <h2 class="last_heading">Indian Vegetarian Diet</h2>
+    <p class="last_para">Indian diet is one of the healthiest diet, rich in taste, texture, and most of all satisfying,
+        if prepared with
+        minimal oil and healthy cooking methods.</p>
+
+    <p class="last_para">Most of the food is prepared from scratch, using fresh produce which means less preservative
+        and more nutrients.</p>
+
+    <p class="last_para">The basic north Indian diet consists of Lentils (contains vitamin A, B, C, E, are rich in
+        calcium, iron,
+        potassium, dietary fibers, help in controlling blood sugar, blood cholesterol and increases digestion), Grains
+        (contains wheat, jowar, bajra, barley, these are rich in fibers, carbohydrate), fresh Vegetables, and Fruits.
+    </p>
+
+    <p class="last_para">Indian cooking uses spices like Turmeric which reduces cholesterol, blood pressure and prevents
+        blood clotting,
+        Curry Leaves washes out toxins from body, cuts down fat, prevents greying of hair, Chilly burns fat and improves
+        metabolism, Garlic is antibacterial and reduces cholesterol, fat.</p>
+
+    <p class="last_para">Curd, an essential part of south Indian diet, keeps the digestive tract healthy. Calcium
+        prevents the
+        development of Insulin resistance.</p>
+
+    <div>
+        <button id="Diet_btn"><a class="Diet_chart" href="/assets/Diet Chart.docx">Diet Chart</a></button>
+    </div>
+</div>
+
+<app-footer></app-footer>

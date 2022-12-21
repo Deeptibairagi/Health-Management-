@@ -1,0 +1,17 @@
+<div class="container_login">        
+        <form class="login_form box">
+            <h1 class="center">Login Form</h1>
+            <div>
+                <input type="text" id="login" placeholder="Login id" [formControl]="login">
+            </div>
+            <div>
+                <input type="password" id="pswd" placeholder="Password" [formControl]="pswd">
+            </div>
+            <div>
+                <button type="button" (click)="signin()" id="btn">Sign in</button> <a id="forget_pswd" href="">Forget Password</a>
+            </div>
+            <div>
+                Not a member? <a id="signup" routerLink="/registration">Signup now</a>
+            </div>
+        </form>
+</div>

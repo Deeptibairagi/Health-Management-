@@ -1,0 +1,18 @@
+.navbar{
+    background-color: purple;
+    font-size:large;
+    list-style-type: none;
+}
+
+#nav_logout{
+    padding-left: 130vh;
+    font-size:large;
+}
+
+
+.nav-item{
+    color: white;
+    font-weight: bold;
+    padding-left: 10vh;
+    text-decoration: none;
+}

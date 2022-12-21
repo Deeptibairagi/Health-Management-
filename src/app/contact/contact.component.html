@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<div class="container_contact">
+    <div class="box">
+        <h1 class="heading_1">Contact Us</h1>
+        <form class="contact_page">
+            <div>
+                <input type="text" class="contact_field" placeholder="Name" [formControl]="name">
+            </div>
+            <div>
+                <input type="text" class="contact_field" placeholder="Email" [formControl]="email">
+            </div>
+            <div>
+                <input type="text" class="contact_field" placeholder="Message" [formControl]="message">
+            </div>
+            <div>
+                <button id="contact_submit" (click)="contact_submit()">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<app-footer></app-footer>
