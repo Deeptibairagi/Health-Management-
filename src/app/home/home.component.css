@@ -1,84 +1,176 @@
-.heading_top{
-    text-align: center;
-    padding-top: 5vh;
+/* If the screen size is 1200px wide or more, set the font-size to 80px (laptop) */
+@media (min-width: 1200px) {
+
+    .heading_top {
+        text-align: center;
+        padding-top: 10vh;
+        font-weight: bold;
+    }
+
+    .heading_top_p {
+        text-align: center;
+        padding: 3vh 18vh;
+        color: black;
+    }
+
+    .home_page1 {
+        padding-left: 35vh;
+        font-weight: bold;
+    }
+
+    .home_form {
+        margin: 1vh;
+        border-radius: 2vh;
+        padding: .5vh;
+    }
+
+    .cal_submit {
+        margin-left: 16vh;
+        margin-top: 2vh;
+        border-radius: 1vh;
+        width: 13vh;
+        background-color: purple;
+        color: white;
+        font-weight: bold;
+    }
+
+    .food_img {
+        width: 48vw;
+        height: 59vh;
+        opacity: .6;
+
+    }
+
+    .heading_cal {
+        color: purple;
+        font-weight: bold;
+        padding-left: 12vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .BMI_result {
+        color: purple;
+        font-weight: bold;
+        padding: 4vh;
+    }
+
+    .last_para {
+        text-align: center;
+        padding: .5vh 18vh;
+        color: black;
+    }
+
+    .last_heading {
+        padding-top: 5vh;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #Diet_btn {
+        margin-left: 90vh;
+        background-color: purple;
+        border-radius: 1vh;
+        width: 8vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .Diet_chart {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
 }
 
-.heading_top_p{
-    text-align: center;
-    padding: 3vh 18vh;
-    color: black;
-}
+/* If the screen size is smaller than 1200px, set the font-size to 80px (mobile) */
+@media (max-width: 1200px) {
 
-.home_page1{
-    padding-left: 35vh;
-    font-weight: bold;
-}
+    .heading_top {
+        text-align: center;
+        padding-left: 3vh;
+        padding-right: 3vh;
+        font-weight: bold;
 
-.home_form{
-    margin: 1vh;
-    border-radius: 2vh;
-    padding: .5vh;
-}
+    }
 
-.cal_submit{
-    margin-left: 16vh;
-    margin-top: 2vh;
-    border-radius: 1vh;
-    width: 13vh;
-    background-color: purple;
-    color: white;
-    font-weight: bold;
-}
+    .heading_top_p {
+        text-align: center;
+        padding: 3vh;
+        color: black;
+    }
 
-.container_home{
-    background-color: rgb(227, 172, 227);
-    height: 150vh;
-    margin-right: 0% !important; 
-}
+    .home_page1 {
+        padding-left: 5vh;
+        font-weight: bold;
+        padding-right: 5vh;
+        /* width: 3vh; */
+    }
 
-.food_img{
-    width: 48vw;
-    height: 59vh;
-    opacity: .6;
+    .home_form {
+        margin: 1vh;
+        border-radius: 2vh;
+        padding: .5vh;
+    }
 
-}
+    .cal_submit {
+        margin-left: 12vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        border-radius: 1vh;
+        /* width: 13vh; */
+        background-color: purple;
+        color: white;
+        font-weight: bold;
+    }
 
-.heading_cal{
-    color: purple;
-    font-weight: bold;
-    padding-left: 12vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
+    .food_img {
+        /* width: 48vw; */
+        height: 31vh;
+        opacity: .6;
 
-.BMI_result{
-    color: purple;
-    font-weight: bold;
-    padding: 4vh;
-}
+    }
 
-.last_para{
-    text-align: center;
-    padding: .5vh 18vh;
-    color: black;
-}
+    .heading_cal {
+        color: purple;
+        font-weight: bold;
+        /* padding-left: 12vh; */
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
 
-.last_heading{
-    padding-top: 5vh;
-    text-align: center;
-    font-weight: bold;
-}
+    .BMI_result {
+        color: purple;
+        font-weight: bold;
+        padding: 2vh;
+    }
 
-#Diet_btn{
-    margin-left: 90vh;
-    background-color: purple;
-    border-radius: 1vh;
-    width: 8vw;
-    margin-top: 5vh;
-}
+    .last_para {
+        text-align: center;
+        padding: 1vh 3vh;
+        color: black;
+    }
 
-.Diet_chart{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+    .last_heading {
+        padding: 3vh;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #Diet_btn {
+        margin-left: 15vh;
+        background-color: purple;
+        border-radius: 1vh;
+        width: 40vw;
+        margin-bottom: 4vh;
+    }
+
+    .Diet_chart {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+
+
 }

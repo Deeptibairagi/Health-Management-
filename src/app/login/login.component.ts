@@ -25,9 +25,9 @@ export class LoginComponent implements OnInit {
       // show sucess popup "Message has been sent"
       // window.alert("Message has been sent")
       let user = JSON.parse(localStorage.getItem("users")!) 
-      if (user==null){
-        window.alert('Incorrect email or password')
-      }
+      // if (user==null){
+      //   window.alert('Incorrect Id or password')
+      // }
       if (user.email == this.login.value && user.pswd == this.pswd.value){
         this.router.navigate(['/home']);
       }else{
@@ -36,7 +36,6 @@ export class LoginComponent implements OnInit {
       // blank all field
       // this.login.setValue("")
       // this.pswd.setValue("")
-    
     }
 
     console.log(this.login.value,this.pswd.value)

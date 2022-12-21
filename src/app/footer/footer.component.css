@@ -10,6 +10,7 @@
     font-size: 10px;
     font-weight: bold;
     padding: .5vh;
+    margin-right: 0vh;
 }
 
 .footer_copy{
@@ -17,5 +18,5 @@
     padding: .5vh;
     text-align: center;
     font-weight: bold;
-    color: rgb(27, 20, 20);
+    color: rgb(190, 176, 176);
 }

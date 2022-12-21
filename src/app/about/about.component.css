@@ -1,26 +1,54 @@
-.heading_1{
-    text-align: center;
-    padding-top: 3vh;
-    padding-bottom: 2vh;
+/* If the screen size is 1200px wide or more, set the font-size to 80px (laptop) */
+@media (min-width: 1200px) {
+
+    .heading_1 {
+        text-align: center;
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+    }
+
+    .heading_2 {
+        text-align: center;
+        padding: 2vh;
+    }
+
+    .heading_2_p {
+        text-align: center;
+        margin-left: 20vh;
+        margin-right: 20vh;
+        color: black;
+    }
+
+    .healthly_points {
+        margin-left: 60vh;
+        color: black;
+        padding-bottom: 3vh;
+    }
 }
 
-.heading_2{
-    text-align: center;
-}
+/* If the screen size is smaller than 1200px, set the font-size to 80px (mobile) */
+@media (max-width: 1200px) {
 
-.heading_2_p{
-    text-align: center;
-    margin-left: 20vh;
-    margin-right: 20vh;
-    color: black;
-}
+    .heading_1 {
+        text-align: center;
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+    }
 
-.healthly_points{
-    margin-left: 60vh;
-    color: black;
-}
+    .heading_2 {
+        text-align: center;
+    }
 
-.container_about{
-    background-color: rgb(227, 172, 227);
-    height: 72vh;
+    .heading_2_p {
+        text-align: center;
+        margin-left: 3vh;
+        margin-right: 3vh;
+        color: black;
+    }
+
+    .healthly_points {
+        margin-left: 6vh;
+        color: black;
+        padding-bottom: 3vh;
+    }
 }

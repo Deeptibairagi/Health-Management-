@@ -13,7 +13,7 @@ export class RegisterationComponent implements OnInit {
   constructor(private router: Router) { }
 
   f_name = new FormControl('', [Validators.required]);
-  s_name = new FormControl('',Validators.required,);
+  l_name = new FormControl('',Validators.required,);
   email = new FormControl('',[Validators.required,Validators.email]);
   pswd = new FormControl('',Validators.required,);
   conf_pswd = new FormControl('',Validators.required,);
@@ -23,7 +23,7 @@ export class RegisterationComponent implements OnInit {
   }
 
   register(){
-    if (this.f_name.value == "" || this.s_name.value == "" || this.email.value=="" || this.pswd.value == "" || this.conf_pswd.value == ""){
+    if (this.f_name.value == "" || this.l_name.value == "" || this.email.value=="" || this.pswd.value == "" || this.pswd.value == ""){
       // show warning popup "Please fill the field"
       window.alert("Please fill the field")
     }
@@ -38,12 +38,12 @@ export class RegisterationComponent implements OnInit {
       // show sucess popup "Message has been sent"
         // window.alert("Message has been sent")
 
-        window.localStorage.setItem("users",JSON.stringify({'fname': this.f_name.value, 'lname': this.s_name.value, 'email': this.email.value, 'pswd': this.conf_pswd.value}))
+        window.localStorage.setItem("users",JSON.stringify({'fname': this.f_name.value, 'lname': this.l_name.value, 'email': this.email.value, 'pswd': this.conf_pswd.value}))
         this.router.navigate(['/home'])
 
       // blank all field
       this.f_name.setValue("")
-      this.s_name.setValue("")
+      this.l_name.setValue("")
       this.email.setValue("")
       this.pswd.setValue("")
       this.conf_pswd.setValue("")
@@ -52,10 +52,5 @@ export class RegisterationComponent implements OnInit {
         window.alert("Password does not match")
       }
     }
-
-
-   
   }
-
-
 }

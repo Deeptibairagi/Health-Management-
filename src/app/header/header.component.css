@@ -1,18 +1,77 @@
-.navbar{
+.button {
     background-color: purple;
-    font-size:large;
-    list-style-type: none;
+    list-style: inside;
 }
 
-#nav_logout{
-    padding-left: 130vh;
-    font-size:large;
+a:hover {
+    color: rgb(227, 172, 227);
+}
+
+.navbar-toggler-icon {
+    height: 5%;
+    width: 5%;
 }
 
 
-.nav-item{
-    color: white;
-    font-weight: bold;
-    padding-left: 10vh;
-    text-decoration: none;
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px (laptop) */
+
+
+@media (min-width: 1200px) {
+    /* .name {
+        color: white;
+        font-size: 4vh;
+        padding-top: 5vh;
+        padding-left: 5%;
+        text-decoration: none;
+        margin-right: 30%;
+    } */
+
+    a{
+        color: white;
+        margin-left: 8vh;
+        padding-top: 8vh;
+        padding-bottom: 3vh;
+            
+    }
+
+    .navbar {
+        font-size: 2.5vh;
+        font-weight: bold;       
+    
+    }
+    #fixed_stiky{
+        position: fixed;
+        background-color: purple;
+        z-index: 2;
+    }
+
+    #logout{
+        padding-left: 110vh;
+    }
+
+
 }
+
+/* If the screen size is smaller than 1200px, set the font-size to 80px (mobile) */
+@media (max-width: 1200px) {
+    /* .name {
+        color: white;
+        font-size: 3vh;
+        text-decoration: none;
+        text-align: left;
+        margin-right: 12vh;
+        padding-top: 1.5vh;
+        padding-bottom: 1vh;
+        } */
+    .navbar {
+        padding-top: 3vh;
+    }
+
+    a{
+        color: purple;
+        margin-left: 8vh;
+        font-weight: bold;
+    }
+}
+
