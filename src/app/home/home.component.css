@@ -68,18 +68,21 @@
     }
 
     #Diet_btn {
-        margin-left: 90vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
         background-color: purple;
         border-radius: 1vh;
         width: 8vw;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
     }
 
     .Diet_chart {
         text-decoration: none;
         color: white;
         font-weight: bold;
+    }
+
+    .diet_btn_center{
+        text-align: center;
     }
 }
 
