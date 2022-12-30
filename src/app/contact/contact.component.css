@@ -11,7 +11,7 @@
         text-align: center;
         border: 3px solid black;
         margin: auto;
-        height: 50vh;
+        /* height: 60vh; */
         width: 25vw;
         background-color: white;
     }
@@ -28,6 +28,7 @@
         width: 6vw;
         color: white;
         font-weight: bold;
+        margin-bottom: 3vh;
     }
 
     .contact_field {
