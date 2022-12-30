@@ -28,7 +28,7 @@ export class ContactComponent implements OnInit {
         window.alert("Wrong email")
       }
       else{
-        // window.alert("Message has been sent")
+        window.alert("Message has been sent")
 
         window.localStorage.setItem("contact",JSON.stringify({'name': this.name.value, 'email': this.email.value, 'msg': this.message.value}))
         
