@@ -20,3 +20,14 @@
     font-weight: bold;
     color: rgb(190, 176, 176);
 }
+
+
+/* If the screen size is smaller than 1200px, set the font-size to 80px (mobile) */
+@media (max-width: 1200px) {
+
+    .footer_img{
+        width: 2vw;
+        margin: 2vh 2vw; 
+    }
+
+}
